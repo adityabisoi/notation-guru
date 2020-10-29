@@ -7,8 +7,7 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "ui": "cd ui && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run ui\"",
-    "install": "npm install && cd ui && npm install"
+    "dev": "concurrently \"npm run server\" \"npm run ui\""
   },
   "repository": {
     "type": "git",
