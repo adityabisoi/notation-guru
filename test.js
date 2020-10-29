@@ -13,12 +13,12 @@ const weightage = {
 }
 for (var i = 0; i < expression.length; i++) {
     var token = expression[i]
-    if (token.match(alphanumeric)) { // if alphanumeric push into final array
+    if (token.match(alphanumeric)) {    // if alphanumeric push into final array
         convertedExpression.push(token)
     } else {
-        if (weightage[token] >= weightage[stack[stack.length - 1]] || stack.length === 0 || token === '(') { // check weightage, push if more wightage than top
+        if (weightage[token] >= weightage[stack[stack.length - 1]] || stack.length === 0 || token === '(') {    // check weightage, push if more wightage than top
             stack.push(token)
-        } else if (token === ')') {
+        } else if (token === ')') {     // evaluate expression in paranthesis first
             while (stack[stack.length - 1] != '(') {
                 el = stack.pop()
                 convertedExpression.push(el)
@@ -35,7 +35,7 @@ for (var i = 0; i < expression.length; i++) {
         }
     }
 }
-while (stack.length != 0) {
+while (stack.length != 0) {     // add remaining tokens from stack
     top = stack.pop()
     convertedExpression.push(top)
 }
