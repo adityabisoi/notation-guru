@@ -2,7 +2,7 @@
   "name": "react-nodejs-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "test.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
