@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
-import User from './components/users'
+import { useState } from 'react';
+import axios from 'axios'
+const App=()=> {
 
-function App() {
+  const [expression,setExpression]=useState('')
+  const [result,setResult]=useState('')
+
+  const updateExpression=(e)=>{
+    setExpression(e.target.value)
+  }
+
+  const getExpression = (e) => {
+    e.preventDefault()
+    sendExpression(expression)
+  }
+
+  const sendExpression=(exp)=>{
+    axios.post('http://localhost:5000/api',{
+      "expression": exp
+    }).then(data=>setResult(data.data.expression))
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <User/>
+      <br />
+      <form onSubmit={getExpression}>
+        <label>Enter a infix expression: </label>
+        <input type='text' value={expression} onChange={updateExpression}/>
+        <button type='submit' >Submit</button>
+      </form>
+      <br/>
+      <h3>Postfix expression: {result}</h3>
     </div>
   );
 }

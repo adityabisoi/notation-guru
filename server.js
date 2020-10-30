@@ -1,14 +1,24 @@
 const express = require('express')
-const app=express()
+const cors = require('cors')
+const bodyParser = require("body-parser")
+const infixToPostfix = require('./infixToPostfix')
 
-app.get('/api',(req,res,next)=>{
-    const userData={
-        fname:'Harry',
-        lname:'Potter'
-    }
-    res.status(200).json(userData)
+const app = express()
+
+app.use(cors())
+app.use(bodyParser.urlencoded({
+    extended: true
+}))
+app.use(bodyParser.json())
+
+app.post('/api', (req, res, next) => {
+    var inputExpression = req.body.expression
+    var result = infixToPostfix.infixToPostfix(inputExpression)
+    res.status(200).json({
+        'expression': result
+    })
 })
 
-app.listen('5000',()=>{
+app.listen('5000', () => {
     console.log('Server started on port 5000')
 })
