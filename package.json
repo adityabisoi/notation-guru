@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
+    "start": "nodemon server.js",
     "ui": "cd ui && npm start",
     "dev": "concurrently \"npm run server\" \"npm run ui\""
   },
