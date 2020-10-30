@@ -1,2 +1,2 @@
 # notation-converter
-An application to convert expression notations
+An application to convert infix, prefix and postfix notations
