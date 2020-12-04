@@ -1,15 +1,24 @@
-# notation-converter
-
 [![Join the chat at https://gitter.im/notation-converter/community](https://badges.gitter.im/notation-converter/community.svg)](https://gitter.im/notation-converter/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-An application to convert infix, prefix and postfix notations
+# notation-converter
 
-### Installation
-* Fork and clone the project to your local machine
+Notification-converter is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps students easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes
+
+## Installation
+Follow the instructions to get started with the project on your local machine 🚀
+
+* Fork and clone the project
 * `cd notation-converter/`
 * Run `npm install` to install NodeJS dependencies
 * Run `cd ui/` and `npm install` to install ReactJS dependencies
 * Run `npm run dev` to run the project on development
 
-### Documentation
-https://bit.ly/333oeRj
+## Documentation
+To understand the aim, scope and technologies used in the project, please see the [documentation](https://bit.ly/333oeRj)
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the GPL V3 License - see the [LICENSE.md](https://github.com/adityabisoi/notation-converter/blob/main/LICENSE) file for details
