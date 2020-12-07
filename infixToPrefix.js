@@ -44,8 +44,6 @@ function infixToPrefix (inputString)
 				}
 				stack.push(token)
 			}
-			
-			
         }
 	}
 	var ans=convertedExpression.reverse().join('')
