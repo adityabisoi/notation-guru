@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
+    "server": "nodemon server",
     "ui": "cd ui && npm start",
     "dev": "concurrently \"npm run server\" \"npm run ui\""
   },
