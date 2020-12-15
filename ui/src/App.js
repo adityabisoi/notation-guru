@@ -29,8 +29,6 @@ const App=()=> {
       <form onSubmit={getExpression}>
         <h3>Enter a infix expression</h3>
         <input
-          style={{width:"400px",
-          marginRight:"10px"}}
           type='text' 
           placeholder="Enter your expression here!"
           value={expression} 
@@ -38,12 +36,6 @@ const App=()=> {
         />
         <CardActions>
         <button 
-           style={{
-           backgroundColor: '#0063cc',
-           '&:hover': {
-           backgroundColor:'#0063cc'},
-           marginLeft:"250px",
-           }}
            type='submit'
            className="btn waves-effect waves-light #64b5f6 blue darken-2" 
         >
