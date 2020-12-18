@@ -18,7 +18,11 @@ function prefixToInfix (inputString)
 			stack.push(newString)
 		}
 	}
-	return stack.pop().split('').reverse().join('')
+	if(stack && stack.length === 1){
+		return stack.pop().split('').reverse().join('')
+	}else{
+		throw new Error("Please enter a valid string")
+	}
 }
 module.exports = {
     prefixToInfix: prefixToInfix
