@@ -16,7 +16,7 @@ const App=()=> {
   }
 
   const sendExpression=(exp)=>{
-    axios.post('http://localhost:5000/api',{
+    axios.post('http://localhost:5000/api/infixToPostfix',{
       "expression": exp
     }).then(data=>setResult(data.data.expression))
   }
