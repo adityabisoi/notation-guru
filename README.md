@@ -19,6 +19,10 @@ To understand the aim, scope and technologies used in the project, please see th
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Help & support
+
+If you are stuck somewhere or do not understand what to do, feel free to reach out to mentors in the official [Gitter Channel](https://gitter.im/notation-converter/community).
+
 ## License
 This project is licensed under the GPL V3 License - see the [LICENSE.md](https://github.com/adityabisoi/notation-converter/blob/main/LICENSE) file for details
 
