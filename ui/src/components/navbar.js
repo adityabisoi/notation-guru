@@ -4,7 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import HomeIcon from '@mui/icons-material/Home';
-import {css} from '@emotion/react';
+import { css } from '@emotion/react';
 import InfixToPostfix from "./infixtopostfix";
 import PostfixToInfix from "./postfixtoinfix";
 import InfixToPrefix from "./infixtoprefix";
