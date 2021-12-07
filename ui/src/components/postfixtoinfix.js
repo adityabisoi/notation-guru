@@ -2,6 +2,7 @@ import '../App.css';
 import { useState} from 'react';
 import axios from 'axios'
 // import CardActions from '@material-ui/core/CardActions';
+import CardActions from '@mui/material/CardActions';
 
 const InfixToPostfix=()=> {
 
@@ -36,7 +37,7 @@ const InfixToPostfix=()=> {
           value={expression} 
           onChange={updateExpression}
         />
-        {/* <CardActions> */}
+        <CardActions>
          <button 
            style={{
            marginLeft:"250px",
@@ -46,7 +47,7 @@ const InfixToPostfix=()=> {
           >
           Submit
         </button>
-        {/* </CardActions> */}
+        </CardActions>
       </form>
       {result &&  (
          <><hr/><h3 style={{color:"green"}}>Infix Expression</h3><h5>{result}</h5></>

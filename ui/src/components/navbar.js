@@ -4,23 +4,47 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import AppBar from '@material-ui/core/AppBar';
 // import IconButton from '@material-ui/core/IconButton';
 // import { Home } from "@material-ui/icons";
+
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import HomeIcon from '@mui/icons-material/Home';
+
+import { css } from '@emotion/react';
+
+
 import InfixToPostfix from "./infixtopostfix";
 import PostfixToInfix from "./postfixtoinfix";
 import InfixToPrefix from "./infixtoprefix";
 import PrefixToInfix from "./prefixtoinfix";
 
-// const useStyles = makeStyles((theme) => ({
-//     navDisplayFlex: {
-//       color:'primary',
-//       display: `flex`,
-//       justifyContent: `space-between`
-//     },
-//     linkText: {
-//       textDecoration: `none`,
-//       textTransform: `uppercase`,
-//       color: `white`
-//     }
-//   }));
+import { createStyles, makeStyles } from '@mui/styles';
+
+
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/Inbox';
+import DraftsIcon from '@mui/icons-material/Drafts';
+
+const useStyles = makeStyles((theme) => ({
+  navDisplayFlex: {
+    color: 'primary',
+    display: `flex`,
+    justifyContent: `space-between`
+  },
+  linkText: {
+    textDecoration: `none`,
+    textTransform: `uppercase`,
+    color: `white`
+  }
+}));
 
 const NavBar = () => {
   // const classes = useStyles();
@@ -34,23 +58,72 @@ const NavBar = () => {
 
   return (
     <>
-      {/* <AppBar  position="static" color="secondary" >
+      <AppBar position="static" color="secondary" >
+        <Toolbar>
+          <IconButton edge="start" style={{ color: "yellow" }} aria-label="home">
+            <HomeIcon fontSize="large" />
+          </IconButton>
+          <Typography variant="h6" style={{ color: "yellow" }}>Notation-converter </Typography>
+          {/* <List className={classes.navDisplayFlex}> */}
+          <List css={css`
+          color: 'primary',
+          display: 'flex',
+          justifyContent: 'space-between'
+        `}>
+            {navLinks.map(({ title, path }) => (
+              // <a href={path} key={title} className={classes.linkText}>
+              <a href={path} key={title} css={css`
+                  textDecoration: 'none',
+                  textTransform: 'uppercase',
+                  color: 'white'
+            `}>
+                <ListItem button>
+                  <ListItemText primary={title} />
+                </ListItem>
+              </a>
+            ))}
+          </List>
+
+          {/* <List>
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <InboxIcon />
+                </ListItemIcon>
+                <ListItemText primary="Inbox" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <DraftsIcon />
+                </ListItemIcon>
+                <ListItemText primary="Drafts" />
+              </ListItemButton>
+            </ListItem>
+          </List> */}
+
+        </Toolbar>
+      </AppBar>
+      {/* <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static">
           <Toolbar>
-            <IconButton edge="start" style={{color:"yellow"}} aria-label="home">
-              <Home fontSize="large" />
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
             </IconButton>
-            <Typography variant="h6" style={{color:"yellow"}}>Notation-converter </Typography>
-            <List className={classes.navDisplayFlex}>
-              {navLinks.map(({ title, path }) => (
-                  <a href={path} key={title} className={classes.linkText}>
-                    <ListItem button>
-                    <ListItemText primary={title} />
-                    </ListItem>
-                  </a>
-              ))}
-            </List>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              News
+            </Typography>
+            <Button color="inherit">Login</Button>
           </Toolbar>
-        </AppBar> */}
+        </AppBar>
+      </Box> */}
       <Router>
         <Routes>
           <Route path="/" element={<InfixToPostfix />} />
