@@ -4,6 +4,14 @@
 
 Notation-converter is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps students easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes
 
+# Table of Contents
+  - [Installation](#installation)
+  - [Documentation](#documentation)
+  - [Contributing](#contributing)
+  - [Help & support](#help--support)
+  - [License](#license)
+  - [Open Source Events](#open-source-events)
+  
 ## Installation
 Follow the instructions to get started with the project on your local machine 🚀
 
