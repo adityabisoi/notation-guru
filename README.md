@@ -1,8 +1,15 @@
 [![Join the chat at https://gitter.im/notation-converter/community](https://badges.gitter.im/notation-converter/community.svg)](https://gitter.im/notation-converter/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+
+
+
+
+
 # notation-converter
 
-Notation-converter is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps students easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes
+![PRimage](https://user-images.githubusercontent.com/86164395/145860680-8647b3a4-784d-4453-99aa-d7adaf65dc52.PNG)
+**Notation-converter is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps students easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes**
+
 
 # Table of Contents
   - [Installation](#installation)
