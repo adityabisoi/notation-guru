@@ -1,4 +1,4 @@
-
+[![Join the chat at https://gitter.im/notation-converter/community](https://badges.gitter.im/notation-converter/community.svg)](https://gitter.im/notation-converter/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # notation-converter
 
