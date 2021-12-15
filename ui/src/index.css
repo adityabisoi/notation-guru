@@ -28,7 +28,7 @@ code {
 .footer .social a{
   text-decoration: none;
   font-size: 26px;
-  color: rgb(255, 255, 255);
+  color: black;
   border: 1px solid #ccc;
   width: 40px;
   height: 40px;
@@ -57,7 +57,7 @@ code {
   text-align: center;
 }
 .footer ul a{
-  color: rgb(247, 247, 251);
+  color: black;
   text-decoration: none;
   opacity: 0.8;
 }
@@ -67,7 +67,7 @@ code {
 }
 .footer ul li a:hover{
   opacity: 1;
-  color: rgb(4, 4, 68);
+  color: black;
   font-weight: bold;
 }
 .nav-links{
@@ -93,7 +93,7 @@ code {
   text-align: center;
   font-size: 15px;
   font-weight: bold;
-  color: rgb(224, 224, 224);
+  color: black;
 }
 
 @media only screen and(max-width:400px)
@@ -101,4 +101,14 @@ code {
   .footer ul .list1{
       display: inline-block;
   }
+}
+
+.navbar-btn {
+  color: black !important;
+  font-size: 1rem !important;
+}
+
+.navbar-btn:hover {
+  background-color: #1976D2 !important;
+  color: white !important;
 }

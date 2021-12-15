@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function footer() {
     return (
-        <section class="footer">  
+        <section class="footer" style={{backgroundImage:"linear-gradient(to top, #accbee 0%, #e7f0fd 100%)"}}>  
         <ul class="list">
             <li class="nav-links"><a href="#">Home</a></li>
             <li class="nav-links"><a href="#">About Us</a></li>
