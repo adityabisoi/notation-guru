@@ -16,6 +16,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react'
 import Link from '@mui/material/Link';
 import HomeIcon from '@mui/icons-material/Home';
+import '../index.css';
 
 const NavBar = () => {
 
@@ -38,7 +39,7 @@ const NavBar = () => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" style={{backgroundImage:"linear-gradient(to top, #accbee 0%, #e7f0fd 100%)"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -46,8 +47,9 @@ const NavBar = () => {
               noWrap
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+              style={{color:"black"}}
             >
-              <HomeIcon fontSize="large" />
+              <HomeIcon fontSize="large" style={{color:"black"}}/>
               Notation-Convertor
             </Typography>
 
@@ -104,6 +106,7 @@ const NavBar = () => {
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                   href={path}
+                  className="navbar-btn"
                 >
                   {title}
                 </Button>
