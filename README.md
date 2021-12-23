@@ -14,12 +14,12 @@
 
 # Table of Contents
  
-  - **[Installation](#installation)**
-  - **[Documentation](#documentation)**
-  - **[Contributing](#contributing)**
-  - **[Help & support](#help--support)**
-  - **[License](#license)**
-  - **[Open Source Events](#open-source-events)**
+  - **[Installation](https://github.com/adityabisoi/notation-converter#installation)**
+  - **[Documentation](https://github.com/adityabisoi/notation-converter#documentation)**
+  - **[Contributing](https://github.com/adityabisoi/notation-converter#contributing)**
+  - **[Help & support](https://github.com/adityabisoi/notation-converter#help--support)**
+  - **[License](https://github.com/adityabisoi/notation-converter#license)**
+  - **[Open Source Events](https://github.com/adityabisoi/notation-converter#open-source-events)**
   - **[Contributors](https://github.com/Chayan-11/notation-converter/blob/main/README.md#contributors)**
  
 </br>
