@@ -5,17 +5,11 @@
 
 # <p align = "center"> notation-converter </p>
 
-</br>
-
 <p align="center" width="100%"><img src="https://user-images.githubusercontent.com/86164395/145943167-45765c08-7057-4645-bfc9-c5a1529b2cfd.jpg"></p>
- 
-</br>  
-
+   
 ****Notation-Converter is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps students easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes.****
 
-</br>
-
-# Table of Contents
+## Table of Contents
  
   - **[Installation](https://github.com/Chayan-11/notation-converter/blob/main/README.md#installation)**
   - **[Documentation](https://github.com/Chayan-11/notation-converter/blob/main/README.md#documentation)**
@@ -24,8 +18,6 @@
   - **[License](https://github.com/Chayan-11/notation-converter/blob/main/README.md#license)**
   - **[Open Source Events](https://github.com/Chayan-11/notation-converter/blob/main/README.md#open-source-events)**
   - **[Contributors](https://github.com/Chayan-11/notation-converter/blob/main/README.md#contributors)**
- 
-</br>
  
 ## Installation
 
@@ -37,37 +29,25 @@
 * **Run `cd ui/` and `npm install` to install ReactJS dependencies**
 * **Run `npm run dev` to run the project on development**
 
-</br>
-
 ## Documentation
 
 **To understand the aim, scope and technologies used in the project, please see the [documentation](https://bit.ly/333oeRj).**
-
-</br>
 
 ## Contributing
 
 **Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.**
 
-</br>
-
 ## Help & support
 
 **If you are stuck somewhere or not able to understand what to do, feel free to reach out to mentors in the official [Gitter Channel](https://gitter.im/notation-converter/community).**
-
-</br>
 
 ## License
 
 **This project is licensed under the GPL V3 License - see the [LICENSE.md](https://github.com/adityabisoi/notation-converter/blob/main/LICENSE) file for details.**
 
-</br>
-
 ##  Open Source Events
 
  <img  src="https://vchrombiediary.files.wordpress.com/2017/12/screenshot-from-2017-12-05-17-02-03-another-copy-e1512483232128.png" href="https://kwoc.kossiitkgp.org/">
-
-</br>
 
 ## Contributors
 
