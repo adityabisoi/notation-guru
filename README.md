@@ -3,7 +3,7 @@
 <a href="https://github.com/adityabisoi/notation-converter/stargazers"><img src="https://img.shields.io/github/stars/adityabisoi/notation-converter" alt="Stars Badge"/></a>
 <a href="https://github.com/adityabisoi/notation-converter/network/members"><img src="https://img.shields.io/github/forks/adityabisoi/notation-converter" alt="Forks Badge"/></a>
 
-# <p align = "center"> [notation-converter](https://github.com/adityabisoi/notation-converter) </p>
+# <p align = "center"> notation-converter </p>
 
 </br>
 
