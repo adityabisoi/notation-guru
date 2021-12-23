@@ -20,6 +20,7 @@
   - **[Help & support](#help--support)**
   - **[License](#license)**
   - **[Open Source Events](#open-source-events)**
+  - **[Contributors](https://github.com/Chayan-11/notation-converter/blob/main/README.md#contributors)**
  
 </br>
  
