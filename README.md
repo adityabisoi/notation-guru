@@ -1,4 +1,7 @@
-[![Join the chat at https://gitter.im/notation-converter/community](https://badges.gitter.im/notation-converter/community.svg)](https://gitter.im/notation-converter/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+**[![Join the chat at https://gitter.im/notation-converter/community](https://badges.gitter.im/notation-converter/community.svg)](https://gitter.im/notation-converter/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)**
+<a href="https://github.com/adityabisoi/notation-converter"><img src="https://sloc.xyz/github/adityabisoi/notation-converter" alt="LOC"/></a>
+<a href="https://github.com/adityabisoi/notation-converter/stargazers"><img src="https://img.shields.io/github/stars/adityabisoi/notation-converter" alt="Stars Badge"/></a>
+<a href="https://github.com/adityabisoi/notation-converter/network/members"><img src="https://img.shields.io/github/forks/adityabisoi/notation-converter" alt="Forks Badge"/></a>
 
 # <p align = "center"> [notation-converter](https://github.com/adityabisoi/notation-converter) </p>
 
