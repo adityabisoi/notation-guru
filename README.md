@@ -17,7 +17,7 @@
   - **[Installation](https://github.com/Chayan-11/notation-converter/blob/main/README.md#installation)**
   - **[Documentation](https://github.com/Chayan-11/notation-converter/blob/main/README.md#documentation)**
   - **[Contributing](https://github.com/Chayan-11/notation-converter/blob/main/README.md#contributing)**
-  - **[Help & support](https://github.com/adityabisoi/notation-converter#help--support)**
+  - **[Help & support](https://github.com/Chayan-11/notation-converter/blob/main/README.md#help--support)**
   - **[License](https://github.com/adityabisoi/notation-converter#license)**
   - **[Open Source Events](https://github.com/adityabisoi/notation-converter#open-source-events)**
   - **[Contributors](https://github.com/Chayan-11/notation-converter/blob/main/README.md#contributors)**
