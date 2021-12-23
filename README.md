@@ -71,7 +71,7 @@
 
 ## Contributors
 
-<p align="center"> Made with ❤️ by </p>
+### <p align="center"> Made with ❤️ by </p>
 
 <a href="https://github.com/adityabisoi/notation-converter/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=adityabisoi/notation-converter" />
