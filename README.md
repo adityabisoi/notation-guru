@@ -15,7 +15,7 @@
 # Table of Contents
  
   - **[Installation](https://github.com/Chayan-11/notation-converter/blob/main/README.md#installation)**
-  - **[Documentation](https://github.com/adityabisoi/notation-converter#documentation)**
+  - **[Documentation](https://github.com/Chayan-11/notation-converter/blob/main/README.md#documentation)**
   - **[Contributing](https://github.com/adityabisoi/notation-converter#contributing)**
   - **[Help & support](https://github.com/adityabisoi/notation-converter#help--support)**
   - **[License](https://github.com/adityabisoi/notation-converter#license)**
