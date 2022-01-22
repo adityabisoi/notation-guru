@@ -2,6 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const bodyParser = require("body-parser")
 
+const port=process.env.PORT || 5000
+
 //Import routes
 const infixToPostfixRoutes = require('./routes/infixToPostfixRoutes')
 const postfixToInfixRoutes = require('./routes/postfixToInfixRoutes')
@@ -21,6 +23,14 @@ app.use('/api/',postfixToInfixRoutes)
 app.use('/api/',infixToPrefixRoutes)
 app.use('/api/',prefixToInfixRoutes)
 
-app.listen('5000', () => {
-    console.log('Server started on port 5000')
+if (process.env.NODE_ENV=='production') {
+    app.use(express.static('build'))
+    app.get('*',(req,res)=>{
+        req.sendFile(path.resolve(__dirname,'/ui/build','index.html'))
+    })
+}
+
+app.listen(port, () => {
+    console.log(__dirname);
+    console.log(`Server started on port ${port}`)
 })
