@@ -6,6 +6,7 @@
   "scripts": {
     "start": "concurrently \"node server.js\" \"npm run ui\"",
     "start:dev": "nodemon server.js",
+    "build":"cd ui/ && npm install",
     "ui": "cd ui && npm start"
   },
   "proxy": "http://localhost:5000",
