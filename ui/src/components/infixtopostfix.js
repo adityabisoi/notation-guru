@@ -18,7 +18,7 @@ const InfixToPostfix = () => {
   }
 
   const sendExpression = (exp) => {
-    axios.post(`${window.location.href}api/infixToPostfix`, {
+    axios.post(`${window.location.origin}/api/infixToPostfix`, {
       "expression": exp
     }).then(data => setResult(data.data.expression))
   }
