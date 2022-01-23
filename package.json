@@ -4,10 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"node server.js\" \"npm run ui\"",
+    "start": "node server.js",
     "start:dev": "nodemon server.js",
-    "build":"cd ui/ && npm install",
-    "ui": "cd ui && npm start"
+    "ui": "cd ui && npm start",
+    "dev": "concurrently \"npm run start\" \"npm run ui\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ui && npm run build --prefix ui"
   },
   "proxy": "http://localhost:5000",
   "repository": {
