@@ -1,7 +1,6 @@
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require("body-parser")
-const path = require('path');
 
 const port=process.env.PORT || 5000
 
@@ -23,13 +22,6 @@ app.use('/api/',infixToPostfixRoutes)
 app.use('/api/',postfixToInfixRoutes)
 app.use('/api/',infixToPrefixRoutes)
 app.use('/api/',prefixToInfixRoutes)
-
-if (process.env.NODE_ENV=='production') {
-    app.use(express.static('build'))
-    app.get('*',(req,res)=>{
-        res.sendFile(path.join(__dirname,'/ui/build/','index.html'))
-    })
-}
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}`)
