@@ -7,6 +7,7 @@ const InfixToPostfix = () => {
 
   const [expression, setExpression] = useState('')
   const [result, setResult] = useState('')
+  const [resultTable, setResultTable] = useState('')
 
   const updateExpression = (e) => {
     setExpression(e.target.value)
@@ -20,7 +21,11 @@ const InfixToPostfix = () => {
   const sendExpression = (exp) => {
     axios.post(`${window.location.origin}/api/infixToPostfix`, {
       "expression": exp
-    }).then(data => setResult(data.data.expression))
+    }).then(data => {
+      setResult(data.data.expression[0])
+      setResultTable(data.data.expression[1])
+      }
+    })
   }
 
   return (
@@ -53,6 +58,25 @@ const InfixToPostfix = () => {
         {result && (
           <><hr /><h3 style={{ color: "green" }}>Postfix Expression</h3><h5>{result}</h5></>
         )}
+        { resultTable && (<table>
+  <thead>
+    <tr>
+      <th>Input</th>
+      <th>Stack</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody> {resultTable.map(item => {
+      return (
+        <tr >
+          <td>{ item.input }</td>
+          <td>{ item.stack }</td>
+          <td>{ item.output }</td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>) }
       </div>
     </div>
   );

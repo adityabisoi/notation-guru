@@ -1,7 +1,11 @@
+const res = require("express/lib/response")
+
 function infixToPostfix(inputString) {
 	const expression = '(' + inputString.split(' ').join('') + ')'
+	console.log(expression)
 	var stack = []
 	var convertedExpression = []
+	var result = []
 	const alphanumeric = /^[0-9a-zA-Z]+$/
 	const weightage =
 	{
@@ -19,7 +23,9 @@ function infixToPostfix(inputString) {
 		}
 		else {
 			if (weightage[token] === 0) {
-				if (token === '(') stack.push(token)
+				if (token === '('){ 
+					stack.push(token)
+				}
 				else {
 					while (stack[stack.length - 1] !== '(') {
 						top = stack.pop()
@@ -35,12 +41,22 @@ function infixToPostfix(inputString) {
 				}
 				stack.push(token)
 			}
-
-
 		}
+			let tb = new TableObject(expression[i],convertedExpression.toString(),stack.toString())
+			result.push(tb)
 	}
 	var ans = convertedExpression.join('')
-	return ans
+	var resultCombine = []
+	resultCombine.push(ans)
+	resultCombine.push(result)
+	return resultCombine
+}
+
+function TableObject(input,output,stack){
+	this.input=input;
+	this.output=output;
+	this.stack=stack;
+	return this;
 }
 module.exports = {
 	infixToPostfix: infixToPostfix
