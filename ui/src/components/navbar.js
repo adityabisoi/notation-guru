@@ -47,9 +47,8 @@ const NavBar = () => {
               noWrap
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-              style={{color:"black"}}
+              style={{color:"black", textDecoration:"underline"}}
             >
-              <HomeIcon fontSize="large" style={{color:"black"}}/>
               Notation-Convertor
             </Typography>
 
@@ -84,7 +83,7 @@ const NavBar = () => {
               >
                 {navLinks.map(({ title, path }) => (
                   <MenuItem key={title} onClick={handleCloseNavMenu}>
-                    <Link href={path} textAlign="center" underline='none'>{title}</Link>
+                    <Link href={path} textAlign="center" underline='none' >{title}</Link>
                   </MenuItem>
                 ))}
               </Menu>
@@ -99,7 +98,7 @@ const NavBar = () => {
               Notation-Convertor
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box  sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {navLinks.map(({ title, path }) => (
                 <Button
                   key={title}
