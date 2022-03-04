@@ -47,15 +47,10 @@ The project is deployed [here](https://notation-converter.herokuapp.com/)
 
 **This project is licensed under the GPL V3 License - see the [LICENSE.md](https://github.com/adityabisoi/notation-converter/blob/main/LICENSE) file for details.**
 
-## <p align = "center"> 💁🏻 Contributors 💁🏻 </p>
-
-### <p align="center"> Made with ❤️ by </p>
-<p align = "center">
+## 💁🏻 Contributors 💁🏻
 <a href="https://github.com/adityabisoi/notation-converter/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=adityabisoi/notation-converter" />
-</a> </p>
+</a>
 
-## <p align = "center"> ❄️❄️ Open Source Events ❄️❄️ </p>
-<p align = "center">
+## ❄️ Open Source Events ❄️
  <img  src="https://vchrombiediary.files.wordpress.com/2017/12/screenshot-from-2017-12-05-17-02-03-another-copy-e1512483232128.png" href="https://kwoc.kossiitkgp.org/">
- </p>
