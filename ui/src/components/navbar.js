@@ -47,9 +47,9 @@ const NavBar = () => {
               noWrap
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-              style={{color:"black", textDecoration:"underline"}}
+              style={{color:"black"}}
             >
-              Notation-Convertor
+              Notation-Converter
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -95,7 +95,7 @@ const NavBar = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-              Notation-Convertor
+              Notation-Converter
             </Typography>
 
             <Box  sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
