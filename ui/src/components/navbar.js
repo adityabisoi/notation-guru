@@ -7,6 +7,7 @@ import InfixToPostfix from "./infixtopostfix";
 import PostfixToInfix from "./postfixtoinfix";
 import InfixToPrefix from "./infixtoprefix";
 import PrefixToInfix from "./prefixtoinfix";
+import PrefixToPostfix from "./prefixtopostfix";
 import Box from '@mui/material/Box';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -24,7 +25,8 @@ const NavBar = () => {
     { title: `InfixToPostfix`, path: `/` },
     { title: `PostfixToInfix`, path: `/postfixtoinfix` },
     { title: `InfixToPrefix`, path: `/infixtoprefix` },
-    { title: `PrefixToInfix`, path: `/prefixtoinfix` }
+    { title: `PrefixToInfix`, path: `/prefixtoinfix` },
+    {title: `PrefixToPostfix`, path:`/prefixtopostfix`}
   ]
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -122,6 +124,7 @@ const NavBar = () => {
           <Route path="/postfixtoinfix" element={<PostfixToInfix />} />
           <Route path="/infixtoprefix" element={<InfixToPrefix />} />
           <Route path="/prefixtoinfix" element={<PrefixToInfix />} />
+          <Route path="/prefixtopostfix" element={<PrefixToPostfix/>}/>
         </Routes>
       </Router>
     </>
