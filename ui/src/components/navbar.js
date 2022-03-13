@@ -49,8 +49,7 @@ const NavBar = () => {
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
               style={{color:"black"}}
             >
-              <HomeIcon fontSize="large" style={{color:"black"}}/>
-              Notation-Convertor
+              Notation-Converter
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -84,7 +83,7 @@ const NavBar = () => {
               >
                 {navLinks.map(({ title, path }) => (
                   <MenuItem key={title} onClick={handleCloseNavMenu}>
-                    <Link href={path} textAlign="center" underline='none'>{title}</Link>
+                    <Link href={path} textAlign="center" underline='none' >{title}</Link>
                   </MenuItem>
                 ))}
               </Menu>
@@ -96,10 +95,10 @@ const NavBar = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-              Notation-Convertor
+              Notation-Converter
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box  sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {navLinks.map(({ title, path }) => (
                 <Button
                   key={title}
