@@ -7,6 +7,7 @@ import InfixToPostfix from "./infixtopostfix";
 import PostfixToInfix from "./postfixtoinfix";
 import InfixToPrefix from "./infixtoprefix";
 import PrefixToInfix from "./prefixtoinfix";
+import PrefixToPostfix from "./prefixtopostfix";
 import Box from '@mui/material/Box';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -25,7 +26,8 @@ const NavBar = () => {
     { title: `InfixToPostfix`, path: `/` },
     { title: `PostfixToInfix`, path: `/postfixtoinfix` },
     { title: `InfixToPrefix`, path: `/infixtoprefix` },
-    { title: `PrefixToInfix`, path: `/prefixtoinfix` }
+    { title: `PrefixToInfix`, path: `/prefixtoinfix` },
+    {title: `PrefixToPostfix`, path:`/prefixtopostfix`}
   ]
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -68,8 +70,10 @@ const NavBar = () => {
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
               style={{ color: 'black' }}
             >
+
               <HomeIcon fontSize="large" style={{ color: 'black' }} />
               Notation-Convertor
+
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -103,9 +107,11 @@ const NavBar = () => {
               >
                 {navLinks.map(({ title, path }) => (
                   <MenuItem key={title} onClick={handleCloseNavMenu}>
+
                     <Link href={path} textAlign="center" underline="none">
                       {title}
                     </Link>
+
                   </MenuItem>
                 ))}
               </Menu>
@@ -117,10 +123,10 @@ const NavBar = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-              Notation-Convertor
+              Notation-Converter
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box  sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {navLinks.map(({ title, path }) => (
                 <Button
                   key={title}
@@ -149,6 +155,7 @@ const NavBar = () => {
           <Route path="/postfixtoinfix" element={<PostfixToInfix />} />
           <Route path="/infixtoprefix" element={<InfixToPrefix />} />
           <Route path="/prefixtoinfix" element={<PrefixToInfix />} />
+          <Route path="/prefixtopostfix" element={<PrefixToPostfix/>}/>
         </Routes>
       </Router>
     </>

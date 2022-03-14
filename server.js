@@ -9,6 +9,7 @@ const infixToPostfixRoutes = require('./routes/infixToPostfixRoutes')
 const postfixToInfixRoutes = require('./routes/postfixToInfixRoutes')
 const infixToPrefixRoutes = require('./routes/infixToPrefixRoutes')
 const prefixToInfixRoutes = require('./routes/prefixToInfixRoutes')
+const prefixToPostfixRoutes = require('./routes/prefixToPostfixRoutes')
 
 const app = express()
 
@@ -22,6 +23,7 @@ app.use('/api/',infixToPostfixRoutes)
 app.use('/api/',postfixToInfixRoutes)
 app.use('/api/',infixToPrefixRoutes)
 app.use('/api/',prefixToInfixRoutes)
+app.use('/api/',prefixToPostfixRoutes)
 
 if (process.env.NODE_ENV === 'production') {
     // Exprees will serve up production assets
