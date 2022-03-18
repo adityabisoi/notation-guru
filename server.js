@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const bodyParser = require("body-parser")
 
-const port=process.env.PORT || 5000
+const port= process.env.PORT || 5000
 
 //Import routes
 const infixToPostfixRoutes = require('./routes/infixToPostfixRoutes')
@@ -10,6 +10,7 @@ const postfixToInfixRoutes = require('./routes/postfixToInfixRoutes')
 const infixToPrefixRoutes = require('./routes/infixToPrefixRoutes')
 const prefixToInfixRoutes = require('./routes/prefixToInfixRoutes')
 const prefixToPostfixRoutes = require('./routes/prefixToPostfixRoutes')
+const postfixToPrefixRoutes = require('./routes/postfixToPrefixRoutes')
 
 const app = express()
 
@@ -24,6 +25,7 @@ app.use('/api/',postfixToInfixRoutes)
 app.use('/api/',infixToPrefixRoutes)
 app.use('/api/',prefixToInfixRoutes)
 app.use('/api/',prefixToPostfixRoutes)
+app.use('/api/',postfixToPrefixRoutes)
 
 if (process.env.NODE_ENV === 'production') {
     // Exprees will serve up production assets
