@@ -18,6 +18,7 @@ import { useState } from 'react'
 import Link from '@mui/material/Link';
 import HomeIcon from '@mui/icons-material/Home';
 import '../index.css';
+import ToggleButton from "./togglebutton";
 
 const NavBar = () => {
 
@@ -39,9 +40,27 @@ const NavBar = () => {
     setAnchorElNav(null);
   };
 
+  const [mode,setMode]=useState("light");
+
+  const  toggleMode=()=>{
+    if(mode==='light'){
+      setMode('dark');
+      document.body.style.backgroundColor = 'rgb(17, 17, 17)';
+     }
+
+   else{
+      setMode('light');
+      document.body.style.backgroundColor = 'white';
+    }
+  }
   return (
     <>
-      <AppBar position="static" style={{backgroundImage:"linear-gradient(to top, #accbee 0%, #e7f0fd 100%)"}}>
+      <AppBar
+        position="static"
+        style={{
+          backgroundImage: 'linear-gradient(to top, #accbee 0%, #e7f0fd 100%)',
+        }}
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -49,9 +68,12 @@ const NavBar = () => {
               noWrap
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-              style={{color:"black"}}
+              style={{ color: 'black' }}
             >
-              Notation-Converter
+
+              <HomeIcon fontSize="large" style={{ color: 'black' }} />
+              Notation-Convertor
+
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -85,7 +107,11 @@ const NavBar = () => {
               >
                 {navLinks.map(({ title, path }) => (
                   <MenuItem key={title} onClick={handleCloseNavMenu}>
-                    <Link href={path} textAlign="center" underline='none' >{title}</Link>
+
+                    <Link href={path} textAlign="center" underline="none">
+                      {title}
+                    </Link>
+
                   </MenuItem>
                 ))}
               </Menu>
@@ -113,6 +139,11 @@ const NavBar = () => {
                 </Button>
               ))}
             </Box>
+
+            <ToggleButton
+              mode={mode}
+              toggleMode={toggleMode}
+            />
 
           </Toolbar>
         </Container>
