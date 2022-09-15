@@ -7,7 +7,7 @@
 
 <p align="center" width="100%"><img src="https://user-images.githubusercontent.com/86164395/145943167-45765c08-7057-4645-bfc9-c5a1529b2cfd.jpg"></p>
    
-****Notation-Guru is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps to easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes.****
+****Notation Guru is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps to easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes.****
 
 
 ### Click [here](https://notation-guru.herokuapp.com/) to use notation-guru!
