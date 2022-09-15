@@ -9,7 +9,8 @@
    
 ****Notation-Converter is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps students easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes.****
 
-The project is deployed [here](https://notation-converter.herokuapp.com/)
+
+### Click [here](https://notation-guru.herokuapp.com/) to use notation-converter!
 
 ## 📝 Table of Contents 📝
  
