@@ -1,16 +1,16 @@
 🚩 **[![Join the chat at https://gitter.im/notation-converter/community](https://badges.gitter.im/notation-converter/community.svg)](https://gitter.im/notation-converter/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)**
-<a href="https://github.com/adityabisoi/notation-converter"><img src="https://sloc.xyz/github/adityabisoi/notation-converter" alt="LOC"/></a>
-<a href="https://github.com/adityabisoi/notation-converter/stargazers"><img src="https://img.shields.io/github/stars/adityabisoi/notation-converter" alt="Stars Badge"/></a>
-<a href="https://github.com/adityabisoi/notation-converter/network/members"><img src="https://img.shields.io/github/forks/adityabisoi/notation-converter" alt="Forks Badge"/></a> 🚩
+<a href="https://github.com/adityabisoi/notation-guru"><img src="https://sloc.xyz/github/adityabisoi/notation-converter" alt="LOC"/></a>
+<a href="https://github.com/adityabisoi/notation-guru/stargazers"><img src="https://img.shields.io/github/stars/adityabisoi/notation-converter" alt="Stars Badge"/></a>
+<a href="https://github.com/adityabisoi/notation-guru/network/members"><img src="https://img.shields.io/github/forks/adityabisoi/notation-converter" alt="Forks Badge"/></a> 🚩
 
-# <p align = "center"> ❄️ Notation-Converter ❄️ </p>
+# <p align = "center"> ❄️ Notation-Guru ❄️ </p>
 
 <p align="center" width="100%"><img src="https://user-images.githubusercontent.com/86164395/145943167-45765c08-7057-4645-bfc9-c5a1529b2cfd.jpg"></p>
    
-****Notation-Converter is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps students easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes.****
+****Notation-Guru is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps to easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes.****
 
 
-### Click [here](https://notation-guru.herokuapp.com/) to use notation-converter!
+### Click [here](https://notation-guru.herokuapp.com/) to use notation-guru!
 
 ## 📝 Table of Contents 📝
  
@@ -27,7 +27,7 @@
 **Follow the instructions to get started with the project on your local machine 🚀**
 
 * 👉🏻 **Fork and clone the project**
-* 👉🏻 **`cd notation-converter/`**
+* 👉🏻 **`cd notation-guru/`**
 * 👉🏻 **Run `npm install` to install NodeJS dependencies**
 * 👉🏻 **Run `cd ui/` and `npm install` to install ReactJS dependencies**
 * 👉🏻 **Run `npm run dev` to run the project on development**
@@ -49,8 +49,8 @@
 **This project is licensed under the GPL V3 License - see the [LICENSE.md](https://github.com/adityabisoi/notation-converter/blob/main/LICENSE) file for details.**
 
 ## 💁🏻 Contributors 💁🏻
-<a href="https://github.com/adityabisoi/notation-converter/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=adityabisoi/notation-converter" />
+<a href="https://github.com/adityabisoi/notation-guru/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=adityabisoi/notation-guru" />
 </a>
 
 ## ❄️ Open Source Events ❄️
