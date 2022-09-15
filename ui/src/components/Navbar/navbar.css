@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rebeccapurple;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+}
+
+.navbar__title {
+    margin-right: auto;
+    font-size: 150%;
+    padding: 12px 16px;
+}
+
+.navbar__item {
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,67 @@
+.site-footer
+{
+  background-color:grey;
+  padding:15px 0 10px;
+  font-size:15px;
+  line-height:18px;
+  color:white;
+  position:fixed;
+  left:0;
+  bottom:0;
+  right:0;
+}
+.text
+{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.text-about
+{
+    padding-left: 280px;
+    padding-right: 280px;
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top: 10px;
+  margin-bottom:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:white;
+  text-decoration: underline;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:white
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
