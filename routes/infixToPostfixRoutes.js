@@ -5,9 +5,10 @@ const infixToPostfix = require('../core/infixToPostfix')
 router.post('/infixToPostfix', (req, res, next) => {
     try {
         var inputExpression = req.body.expression
-        var result = infixToPostfix.infixToPostfix(inputExpression)
+        const {data,output} = infixToPostfix.infixToPostfix(inputExpression)
         res.status(200).json({
-            expression: result,
+            data: data,
+            output: output
         })
     } catch (error) {
         res.status(500).json({
