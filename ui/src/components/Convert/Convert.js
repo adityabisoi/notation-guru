@@ -38,8 +38,8 @@ function Convert(){
             body: JSON.stringify({"expression":expression.infix})
           }
         const [prefixRes, PostfixRes] = await Promise.all([
-            fetch(`http://localhost:5000/api/infixToPrefix`,options),
-            fetch(`http://localhost:5000/api/infixToPostfix`,options)
+            fetch(`${window.location.origin}/api/infixToPrefix`,options),
+            fetch(`${window.location.origin}/api/infixToPostfix`,options)
           ]);
         const prefix=await prefixRes.json()
         const postfix=await PostfixRes.json()
