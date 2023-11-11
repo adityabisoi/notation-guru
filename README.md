@@ -9,9 +9,6 @@
    
 Notation Guru is an application that converts infix, prefix and postfix notations from one notation to another, and also visualizes the process of conversion. This helps to easily grasp the fundamentals, such as the way of calculation, as well as the data structures used behind the scenes.
 
-
-### Click [here](https://notation-guru.herokuapp.com/) to use notation-guru!
-
 ## Table of Contents
  
   - [Installation](https://github.com/Chayan-11/notation-converter/blob/main/README.md#installation)
